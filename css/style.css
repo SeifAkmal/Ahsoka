@@ -12,16 +12,17 @@
 
 /* --------scrollbar-------- */
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 11px;
 }
 ::-webkit-scrollbar-track {
   background-color: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: #ccc;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #167abd;
+  background-color: #b0b0b0;
 }
 /* --------scrollbar-------- */
 /* Start global rules */
@@ -1201,6 +1202,8 @@ ul {
 }
 .events .container .event-container {
   text-align: center;
+  text-align: center;
+  width: 100%;
 }
 
 .events .container .time {
@@ -1232,11 +1235,11 @@ ul {
   border-top: 1px solid #ccc;
   font-size: 15px;
 }
-.events .container .event-container h2 {
+.events .container .event-container .text h2 {
   margin-bottom: 15px;
   font-size: 27px;
 }
-.events .container .event-container p {
+.events .container .event-container .text p {
   text-align: center;
   line-height: 1.7;
   font-size: 19px;
@@ -1245,7 +1248,7 @@ ul {
   margin: 20px 0;
 }
 @media (max-width: 992px) {
-  .events .container .event-container p {
+  .events .container .event-container .text p {
     width: 100%;
   }
 }
